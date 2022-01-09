@@ -1,5 +1,12 @@
 import Profile from "./components/Profile/Profile";
-import profiles from './components/Profile/user.json'
+import Friends from './components/Friends/FriendList';
+import Statistics from './components/Statistics/Statistics';
+import Transaction from './components/Transaction/TransactionHistory';
+import profiles from './components/Profile/user.json';
+import friends from './components/Friends/friends.json';
+import data from './components/Statistics/data.json';
+import transaction from './components/Transaction/transactions.json';
+
 
 const profile = profiles;
 
