@@ -1,28 +1,34 @@
 import Profile from "./components/Profile/Profile";
-import Friends from './components/Friends/FriendList';
-import Statistics from './components/Statistics/Statistics';
-import Transaction from './components/Transaction/TransactionHistory';
-import profiles from './components/Profile/user.json';
+import user from './components/Profile/user.json';
+
+import FriendList from './components/Friends/FriendList';
 import friends from './components/Friends/friends.json';
+
+import Statistics from './components/Statistics/Statistics';
 import data from './components/Statistics/data.json';
-import transaction from './components/Transaction/transactions.json';
 
+import TransactionHistory from './components/Transaction/TransactionHistory';
+import transactions from './components/Transaction/transactions.json';
 
-const profile = profiles;
+import { Container } from "./App.styled";
+
 
 export default function App() {
   return (
-    <div>
+    <Container>
       <Profile
-        avatar={profile.avatar}
-        username={profile.username}
-        tag={profile.tag}
-        location={profile.location}
-        followers={profile.stats.followers}
-        views={profile.stats.views}
-        likes={profile.stats.likes}
+        avatar={user.avatar}
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        followers={user.stats.followers}
+        views={user.stats.views}
+        likes={user.stats.likes}
       />
-    </div>
+      <Statistics title="Upload stats" stats={data}/>
+      <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
+    </Container>
   );
 }
 

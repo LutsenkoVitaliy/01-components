@@ -1,11 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
+// import './index.css';
+// import { ThemeProvider } from '@emotion/react'
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <App />
   </React.StrictMode>,
   document.getElementById("root")
 );
