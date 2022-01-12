@@ -10,12 +10,14 @@ export const FriendsItem = styled.li`
   justify-content: center;
 `;
 
-
+const colorOnline = ({ isOnline }) => {
+  return isOnline ? 'green' : 'red'
+}
 
 export const Status = styled.span`
   font-size: 36px;
   margin-right: 5px;
-  color: #FF0000;
+  color: ${colorOnline};
 `;
 
 export const Avatar = styled.img`
@@ -26,5 +28,5 @@ export const Avatar = styled.img`
 export const FriendName = styled.p`
   font-size: 24px;
   font-weight: 500;
-  color: #ffffff;
+  color: #000000;
 `;

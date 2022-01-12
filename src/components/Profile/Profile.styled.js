@@ -1,12 +1,12 @@
 import styled from '@emotion/styled'
 
 export const Description = styled.div`
-  padding: 30px 0;
+  padding-bottom: 30px ;
 `;
 
 export const Image = styled.img`
   display: block;
-  width: 100px;
+  width: 150px;
   margin: 0 auto;
   border: 1px solid #111111;
   border-radius: 50px;
@@ -48,16 +48,15 @@ export const Location = styled.p`
 
 export const StatsList = styled.ul`
   display: flex;
-  justify-content: space-between;
-  background-color: #eeeeee;
-  border: 1px solid #999999;
+  width: 600px;
+  padding-top: 20px;
 `;
 
 export const StatsItem = styled.li`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 20px 20px;
+  padding: 10px 30px;
   flex-basis: calc(100% / 3);
 
   &:not(:last-child) {
